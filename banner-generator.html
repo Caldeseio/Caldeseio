@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Caldeseio — GitHub Banner Generator</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: #F1EDE3; font-family: 'Bricolage Grotesque', sans-serif; -webkit-font-smoothing: antialiased; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 48px 24px; gap: 32px; }
+  h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.03em; color: #272A26; margin: 0; }
+  p { font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.12em; color: #6E7268; margin: 0; }
+  .card { background: #fff; border: 1px solid #D5D0C4; border-radius: 12px; padding: 32px; display: flex; flex-direction: column; align-items: center; gap: 20px; max-width: 700px; width: 100%; box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+  canvas { width: 100%; height: auto; border-radius: 8px; display: block; }
+  button { font-family: 'JetBrains Mono', monospace; font-size: 13px; letter-spacing: 0.1em; background: #2C3A2E; color: #F1EDE3; border: none; border-radius: 999px; padding: 12px 28px; cursor: pointer; transition: background .15s; }
+  button:hover { background: #4F9D5B; }
+  .meta { font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #6E7268; letter-spacing: 0.08em; }
+  .logo { display: flex; align-items: center; gap: 12px; }
+</style>
+</head>
+<body>
+
+<div class="logo">
+  <svg width="36" height="36" viewBox="0 0 100 100" fill="none">
+    <circle cx="50" cy="50" r="40" stroke="#272A26" stroke-width="8" stroke-linecap="round" stroke-dasharray="190 251" transform="rotate(38 50 50)"/>
+    <circle cx="78" cy="28" r="8.5" fill="#4F9D5B"/>
+  </svg>
+  <h1>Caldeseio</h1>
+</div>
+
+<p>GITHUB BANNER GENERATOR — 1280 × 640</p>
+
+<div class="card">
+  <canvas id="cv" width="2560" height="1280"></canvas>
+  <button id="dlbtn">↓ Descargar banner.png</button>
+  <p class="meta">Guardar como images/banner.png en el repo</p>
+</div>
+
+<script>
+(function () {
+  // ── Brand tokens ────────────────────────────────────────────────
+  const C = {
+    forest:    '#2C3A2E',
+    green:     '#4F9D5B',
+    ink:       '#272A26',
+    graphite:  '#6E7268',
+    bone:      '#F1EDE3',
+    boneOnInk: '#AFC3B2',
+    motifLine: 'rgba(241,237,227,0.10)',
+    motifDot:  'rgba(241,237,227,0.16)',
+    accent:    '#4F9D5B',
+  };
+  const FB = "'Bricolage Grotesque', sans-serif";
+  const FM = "'JetBrains Mono', monospace";
+  const W = 1280, H = 640, S = 2;
+
+  // ── Font loading ────────────────────────────────────────────────
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = 'https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700&family=JetBrains+Mono:wght@500&display=swap';
+  document.head.appendChild(link);
+
+  async function waitFonts() {
+    await Promise.allSettled([
+      document.fonts.load(`700 120px "Bricolage Grotesque"`),
+      document.fonts.load(`500 40px "JetBrains Mono"`),
+    ]);
+    await document.fonts.ready;
+  }
+
+  // ── Mark (SVG → Image) ─────────────────────────────────────────
+  function loadMark(stroke, node) {
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
+      <circle cx="50" cy="50" r="40" stroke="${stroke}" stroke-width="8" stroke-linecap="round" stroke-dasharray="190 251" transform="rotate(38 50 50)"/>
+      <circle cx="78" cy="28" r="8.5" fill="${node}"/>
+    </svg>`;
+    return new Promise((res, rej) => {
+      const img = new Image();
+      img.onload = () => res(img);
+      img.onerror = rej;
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    });
+  }
+
+  // ── Network motif ──────────────────────────────────────────────
+  function drawMotif(x, w, h) {
+    const nodes = [[.06,.26],[.18,.7],[.13,.95],[.34,.4],[.31,.12],[.52,.72],[.66,.22],[.8,.6],[.92,.34],[.88,.86],[.46,.92]];
+    const edges = [[0,3],[3,1],[1,2],[3,4],[3,5],[5,7],[7,8],[8,9],[6,8],[4,6],[5,10],[6,5]];
+    const P = i => [nodes[i][0] * w, nodes[i][1] * h];
+    x.strokeStyle = C.motifLine;
+    x.lineWidth = Math.max(1.2, h * 0.003);
+    edges.forEach(e => {
+      const a = P(e[0]), b = P(e[1]);
+      x.beginPath(); x.moveTo(a[0], a[1]); x.lineTo(b[0], b[1]); x.stroke();
+    });
+    const accents = [3, 7];
+    nodes.forEach((n, i) => {
+      const px = n[0] * w, py = n[1] * h, on = accents.includes(i);
+      x.fillStyle = on ? C.accent : C.motifDot;
+      x.beginPath(); x.arc(px, py, on ? h * 0.020 : h * 0.011, 0, Math.PI * 2); x.fill();
+    });
+  }
+
+  // ── Block layout (centered, GitHub 1280×640) ───────────────────
+  function drawBlock(x, w, h, markImg) {
+    const cx = w / 2;
+
+    // Mark
+    if (markImg) {
+      const r = h * 0.105;
+      const box = 2.5 * r;
+      x.drawImage(markImg, cx - box / 2, h * 0.30 - box / 2, box, box);
+    }
+
+    // Wordmark
+    const wordFont = h * 0.155;
+    x.fillStyle = C.bone;
+    x.letterSpacing = (-0.04 * wordFont) + 'px';
+    x.font = `700 ${wordFont}px ${FB}`;
+    x.textBaseline = 'middle';
+    const ww = x.measureText('Caldeseio').width;
+    x.fillText('Caldeseio', cx - ww / 2, h * 0.505);
+    x.letterSpacing = '0px';
+
+    // Subtitle
+    const subFont = h * 0.033;
+    const sub = 'LUIS CALDERÓN JIMÉNEZ · SOFTWARE DEVELOPER & DATA ANALYST';
+    x.fillStyle = C.green;
+    x.font = `500 ${subFont}px ${FM}`;
+    x.letterSpacing = (subFont * 0.04) + 'px';
+    x.textBaseline = 'middle';
+    x.fillText(sub, cx - x.measureText(sub).width / 2, h * 0.615);
+    x.letterSpacing = '0px';
+
+    // Tagline
+    const tf = h * 0.048;
+    x.fillStyle = C.boneOnInk;
+    x.font = `400 ${tf}px ${FB}`;
+    x.textBaseline = 'middle';
+    const tag = 'Ingeniería precisa, hecha con criterio propio.';
+    x.fillText(tag, cx - x.measureText(tag).width / 2, h * 0.715);
+  }
+
+  // ── Main render ────────────────────────────────────────────────
+  async function render() {
+    await waitFonts();
+    const markImg = await loadMark(C.bone, C.green);
+
+    const cv = document.getElementById('cv');
+    cv.width = W * S; cv.height = H * S;
+    const x = cv.getContext('2d');
+    x.scale(S, S);
+
+    // Background
+    x.fillStyle = C.forest;
+    x.fillRect(0, 0, W, H);
+
+    // Motif
+    drawMotif(x, W, H);
+
+    // Content
+    drawBlock(x, W, H, markImg);
+  }
+
+  // ── Download ───────────────────────────────────────────────────
+  document.getElementById('dlbtn').addEventListener('click', async () => {
+    const btn = document.getElementById('dlbtn');
+    btn.textContent = '…';
+    try {
+      await render();
+      const cv = document.getElementById('cv');
+      cv.toBlob(blob => {
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url; a.download = 'banner.png';
+        document.body.appendChild(a); a.click(); a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 4000);
+        btn.textContent = '✓ Descargado';
+        setTimeout(() => { btn.textContent = '↓ Descargar banner.png'; }, 3000);
+      }, 'image/png');
+    } catch (err) {
+      console.error(err);
+      btn.textContent = '↓ Descargar banner.png';
+      alert('Error al generar el PNG. Intentá en Chrome o Firefox.');
+    }
+  });
+
+  // Auto-render preview on load
+  waitFonts().then(async () => {
+    const markImg = await loadMark(C.bone, C.green);
+    const cv = document.getElementById('cv');
+    cv.width = W * S; cv.height = H * S;
+    const x = cv.getContext('2d');
+    x.scale(S, S);
+    x.fillStyle = C.forest; x.fillRect(0, 0, W, H);
+    drawMotif(x, W, H);
+    drawBlock(x, W, H, markImg);
+  });
+})();
+</script>
+</body>
+</html>
