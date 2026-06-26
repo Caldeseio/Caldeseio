@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="170" viewBox="0 0 520 170">
+  <!-- background -->
+  <rect width="520" height="170" fill="#0a0f0b"/>
+  <!-- outer pixel border -->
+  <rect x="0.5" y="0.5" width="519" height="169" fill="none"
+    stroke="rgba(79,157,91,0.35)" stroke-width="1"/>
+  <!-- inner pixel border -->
+  <rect x="3.5" y="3.5" width="513" height="163" fill="none"
+    stroke="rgba(79,157,91,0.12)" stroke-width="1"/>
+
+  <!-- section label -->
+  <text x="14" y="22" font-family="monospace" font-size="9" letter-spacing="2"
+    fill="#4F9D5B">&#9670; HABILIDADES</text>
+  <line x1="120" y1="18" x2="506" y2="18" stroke="rgba(79,157,91,0.18)" stroke-width="1"/>
+
+  <!-- FRONTEND block -->
+  <rect x="12" y="30" width="238" height="60" rx="3" fill="rgba(44,58,46,0.25)"
+    stroke="rgba(79,157,91,0.12)" stroke-width="1"/>
+  <text x="22" y="48" font-family="monospace" font-size="8" letter-spacing="2" fill="#6E7268">FRONTEND</text>
+  <text x="22" y="68" font-family="monospace" font-size="16" font-weight="600" fill="#F1EDE3">&#9733; S</text>
+  <rect x="22" y="78" width="216" height="3" rx="2" fill="rgba(44,58,46,0.6)"/>
+  <rect x="22" y="78" width="205" height="3" rx="2" fill="url(#barGrad)"/>
+
+  <!-- BACKEND block -->
+  <rect x="258" y="30" width="250" height="60" rx="3" fill="rgba(44,58,46,0.25)"
+    stroke="rgba(79,157,91,0.12)" stroke-width="1"/>
+  <text x="268" y="48" font-family="monospace" font-size="8" letter-spacing="2" fill="#6E7268">BACKEND</text>
+  <text x="268" y="68" font-family="monospace" font-size="16" font-weight="600" fill="#F1EDE3">&#9733; S</text>
+  <rect x="268" y="78" width="228" height="3" rx="2" fill="rgba(44,58,46,0.6)"/>
+  <rect x="268" y="78" width="210" height="3" rx="2" fill="url(#barGrad)"/>
+
+  <!-- DATA block -->
+  <rect x="12" y="98" width="238" height="60" rx="3" fill="rgba(44,58,46,0.25)"
+    stroke="rgba(79,157,91,0.12)" stroke-width="1"/>
+  <text x="22" y="116" font-family="monospace" font-size="8" letter-spacing="2" fill="#6E7268">DATA &amp; BI</text>
+  <text x="22" y="136" font-family="monospace" font-size="16" font-weight="600" fill="#F1EDE3">&#9733; A+</text>
+  <rect x="22" y="146" width="216" height="3" rx="2" fill="rgba(44,58,46,0.6)"/>
+  <rect x="22" y="146" width="188" height="3" rx="2" fill="url(#barGrad)"/>
+
+  <!-- DEVOPS block -->
+  <rect x="258" y="98" width="250" height="60" rx="3" fill="rgba(44,58,46,0.25)"
+    stroke="rgba(79,157,91,0.12)" stroke-width="1"/>
+  <text x="268" y="116" font-family="monospace" font-size="8" letter-spacing="2" fill="#6E7268">DEVOPS</text>
+  <text x="268" y="136" font-family="monospace" font-size="16" font-weight="600" fill="#F1EDE3">&#9733; A</text>
+  <rect x="268" y="146" width="228" height="3" rx="2" fill="rgba(44,58,46,0.6)"/>
+  <rect x="268" y="146" width="178" height="3" rx="2" fill="url(#barGrad)"/>
+
+  <defs>
+    <linearGradient id="barGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2C3A2E"/>
+      <stop offset="100%" stop-color="#4F9D5B"/>
+    </linearGradient>
+  </defs>
+</svg>
