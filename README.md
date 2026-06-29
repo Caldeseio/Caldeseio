@@ -52,16 +52,6 @@
 
 ---
 
-**`◆ ACTIVIDAD`**
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Caldeseio&show_icons=true&hide_border=true&bg_color=0a0f0b&text_color=F1EDE3&icon_color=4F9D5B&title_color=4F9D5B&rank_icon=github" height="160" alt="GitHub Stats">
-  &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Caldeseio&layout=compact&hide_border=true&bg_color=0a0f0b&text_color=F1EDE3&title_color=4F9D5B&langs_count=6" height="160" alt="Top Languages">
-</div>
-
----
-
 **`◆ PROYECTOS`**
 
 <table>
