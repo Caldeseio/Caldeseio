@@ -40,7 +40,7 @@
 
 <br>
 
-**`◆ STACK TÉCNICO`**
+**`◆ STACK TÉCNICO `**
 
 ![PHP](https://img.shields.io/badge/PHP-2C3A2E?style=flat-square&logo=php&logoColor=4F9D5B)
 ![Laravel](https://img.shields.io/badge/Laravel-2C3A2E?style=flat-square&logo=laravel&logoColor=4F9D5B)
