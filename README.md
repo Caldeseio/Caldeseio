@@ -11,7 +11,7 @@
 </div>
 
 <br>
-
+<div align="center">
 *Ingeniería precisa, hecha con criterio propio.*
 <br>
 
