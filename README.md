@@ -39,16 +39,28 @@
 
 **`◆ STACK TÉCNICO`**
 
+![PHP](https://img.shields.io/badge/PHP-2C3A2E?style=flat-square&logo=php&logoColor=4F9D5B)
+![Laravel](https://img.shields.io/badge/Laravel-2C3A2E?style=flat-square&logo=laravel&logoColor=4F9D5B)
+![JavaScript](https://img.shields.io/badge/JavaScript-2C3A2E?style=flat-square&logo=javascript&logoColor=4F9D5B)
+![HTML](https://img.shields.io/badge/HTML-2C3A2E?style=flat-square&logo=html5&logoColor=4F9D5B)
+![CSS](https://img.shields.io/badge/CSS-2C3A2E?style=flat-square&logo=css3&logoColor=4F9D5B)
 ![React](https://img.shields.io/badge/React-2C3A2E?style=flat-square&logo=react&logoColor=4F9D5B)
 ![Python](https://img.shields.io/badge/Python-2C3A2E?style=flat-square&logo=python&logoColor=4F9D5B)
-![Laravel](https://img.shields.io/badge/Laravel-2C3A2E?style=flat-square&logo=laravel&logoColor=4F9D5B)
-![Power BI](https://img.shields.io/badge/Power_BI-2C3A2E?style=flat-square&logo=powerbi&logoColor=4F9D5B)
-![TypeScript](https://img.shields.io/badge/TypeScript-2C3A2E?style=flat-square&logo=typescript&logoColor=4F9D5B)
-![SQL](https://img.shields.io/badge/SQL-2C3A2E?style=flat-square&logo=postgresql&logoColor=4F9D5B)
-![Node.js](https://img.shields.io/badge/Node.js-2C3A2E?style=flat-square&logo=node.js&logoColor=4F9D5B)
 ![Pandas](https://img.shields.io/badge/Pandas-2C3A2E?style=flat-square&logo=pandas&logoColor=4F9D5B)
-![Docker](https://img.shields.io/badge/Docker-2C3A2E?style=flat-square&logo=docker&logoColor=4F9D5B)
+![NumPy](https://img.shields.io/badge/NumPy-2C3A2E?style=flat-square&logo=numpy&logoColor=4F9D5B)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-2C3A2E?style=flat-square&logo=python&logoColor=4F9D5B)
+![Next.js](https://img.shields.io/badge/Next.js-2C3A2E?style=flat-square&logo=nextdotjs&logoColor=4F9D5B)
+![Node.js](https://img.shields.io/badge/Node.js-2C3A2E?style=flat-square&logo=node.js&logoColor=4F9D5B)
+![R](https://img.shields.io/badge/R-2C3A2E?style=flat-square&logo=r&logoColor=4F9D5B)
+![Power BI](https://img.shields.io/badge/Power_BI-2C3A2E?style=flat-square&logo=powerbi&logoColor=4F9D5B)
+![Django](https://img.shields.io/badge/Django-2C3A2E?style=flat-square&logo=django&logoColor=4F9D5B)
+![TypeScript](https://img.shields.io/badge/TypeScript-2C3A2E?style=flat-square&logo=typescript&logoColor=4F9D5B)
+![MySQL](https://img.shields.io/badge/MySQL-2C3A2E?style=flat-square&logo=mysql&logoColor=4F9D5B)
+![SQL Server](https://img.shields.io/badge/SQL_Server-2C3A2E?style=flat-square&logo=microsoftsqlserver&logoColor=4F9D5B)
+![MariaDB](https://img.shields.io/badge/MariaDB-2C3A2E?style=flat-square&logo=mariadb&logoColor=4F9D5B)
+![AWS](https://img.shields.io/badge/AWS-2C3A2E?style=flat-square&logo=amazonaws&logoColor=4F9D5B)
 ![Git](https://img.shields.io/badge/Git-2C3A2E?style=flat-square&logo=git&logoColor=4F9D5B)
+![Vercel](https://img.shields.io/badge/Vercel-2C3A2E?style=flat-square&logo=vercel&logoColor=4F9D5B)
 
 ---
 
