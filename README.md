@@ -7,7 +7,7 @@
 -->
 
 <div align="center">
-  <img src="images/banner.png" alt="Caldeseio" width="100%">
+  <img src="images/banneror.png" alt="Caldeseio" width="100%">
 </div>
 
 <br>
