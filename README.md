@@ -20,6 +20,9 @@
 `Software Developer · Data Analyst`
 
 *Ingeniería precisa, hecha con criterio propio.*
+<br>
+
+*Ingeniero de Software orientado a resultados con más de 2 años de experiencia en desarrollo full-stack e implementación de sistemas Aprendizaje rápido con pasión por tecnologías emergentes y compromiso con la calidad del código.*
 
 <br>
 
@@ -53,8 +56,6 @@
 ![Node.js](https://img.shields.io/badge/Node.js-2C3A2E?style=flat-square&logo=node.js&logoColor=4F9D5B)
 ![R](https://img.shields.io/badge/R-2C3A2E?style=flat-square&logo=r&logoColor=4F9D5B)
 ![Power BI](https://img.shields.io/badge/Power_BI-2C3A2E?style=flat-square&logo=powerbi&logoColor=4F9D5B)
-![Django](https://img.shields.io/badge/Django-2C3A2E?style=flat-square&logo=django&logoColor=4F9D5B)
-![TypeScript](https://img.shields.io/badge/TypeScript-2C3A2E?style=flat-square&logo=typescript&logoColor=4F9D5B)
 ![MySQL](https://img.shields.io/badge/MySQL-2C3A2E?style=flat-square&logo=mysql&logoColor=4F9D5B)
 ![SQL Server](https://img.shields.io/badge/SQL_Server-2C3A2E?style=flat-square&logo=microsoftsqlserver&logoColor=4F9D5B)
 ![MariaDB](https://img.shields.io/badge/MariaDB-2C3A2E?style=flat-square&logo=mariadb&logoColor=4F9D5B)
