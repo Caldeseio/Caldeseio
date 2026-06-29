@@ -1,4 +1,16 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="520" height="170" viewBox="0 0 520 170">
+<!--
+  SKILLS CONFIG — edita los valores de cada bloque aquí:
+  Bloque 1 (sup. izq): label="FRONTEND"       rating="★ S"   bar=205  (máx 216)
+  Bloque 2 (sup. der): label="BACKEND"        rating="★ S"   bar=210  (máx 228)
+  Bloque 3 (inf. izq): label="DATA & BI"      rating="★ A+"  bar=188  (máx 216)
+  Bloque 4 (inf. der): label="QA & ANÁLISIS"  rating="★ A+"   bar=178  (máx 228)
+
+  Para cambiar label  → edita el <text fill="#6E7268">NOMBRE</text> de cada bloque
+  Para cambiar rating → edita el <text fill="#F1EDE3">★ X</text> de cada bloque
+  Para cambiar barra  → cambia el width= del <rect fill="url(#barGrad)"> de cada bloque
+  Escala: S = tope · A+ = excelente · A = sólido · B = básico
+-->
   <!-- background -->
   <rect width="520" height="170" fill="#0a0f0b"/>
   <!-- outer pixel border -->
@@ -40,8 +52,8 @@
   <!-- DEVOPS block -->
   <rect x="258" y="98" width="250" height="60" rx="3" fill="rgba(44,58,46,0.25)"
     stroke="rgba(79,157,91,0.12)" stroke-width="1"/>
-  <text x="268" y="116" font-family="monospace" font-size="8" letter-spacing="2" fill="#6E7268">DEVOPS</text>
-  <text x="268" y="136" font-family="monospace" font-size="16" font-weight="600" fill="#F1EDE3">&#9733; A</text>
+  <text x="268" y="116" font-family="monospace" font-size="8" letter-spacing="2" fill="#6E7268">QA &amp; ANÁLISIS</text>
+  <text x="268" y="136" font-family="monospace" font-size="16" font-weight="600" fill="#F1EDE3">&#9733; A+</text>
   <rect x="268" y="146" width="228" height="3" rx="2" fill="rgba(44,58,46,0.6)"/>
   <rect x="268" y="146" width="178" height="3" rx="2" fill="url(#barGrad)"/>
 

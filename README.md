@@ -1,9 +1,9 @@
 <!--
-  CONFIGURACIÓN — edita estos valores para personalizar el README
-  GH_USER   : Caldeseio            ← nombre de usuario GitHub (2 apariciones en ◆ ACTIVIDAD)
-  LI_USER   : luis-calderon-962a57258  ← ID de perfil LinkedIn
-  EMAIL     : l.calderon@uempresarial.com
-  PORTFOLIO : caldeseio.dev
+  CONFIGURACIÓN
+  GH_USER   : Caldeseio
+  LI_USER   : luis-calderon-962a57258
+  EMAIL     : luiscalderontcit@gmail.com
+  PORTFOLIO : https://caldeseio-cv.vercel.app/
 -->
 
 <div align="center">
@@ -28,9 +28,9 @@
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-2C3A2E?style=flat-square&logo=linkedin&logoColor=4F9D5B)](https://www.linkedin.com/in/luis-calderon-962a57258)
 &nbsp;
-[![Portfolio](https://img.shields.io/badge/Portfolio-2C3A2E?style=flat-square&logo=vercel&logoColor=4F9D5B)](https://caldeseio.dev)
+[![Portfolio](https://img.shields.io/badge/Portfolio-2C3A2E?style=flat-square&logo=vercel&logoColor=4F9D5B)](https://caldeseio-cv.vercel.app/)
 &nbsp;
-[![Email](https://img.shields.io/badge/Email-2C3A2E?style=flat-square&logo=gmail&logoColor=4F9D5B)](mailto:l.calderon@uempresarial.com)
+[![Email](https://img.shields.io/badge/Email-2C3A2E?style=flat-square&logo=gmail&logoColor=4F9D5B)](mailto:luiscalderontcit@gmail.com)
 
 </div>
 
@@ -53,6 +53,7 @@
 ![NumPy](https://img.shields.io/badge/NumPy-2C3A2E?style=flat-square&logo=numpy&logoColor=4F9D5B)
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-2C3A2E?style=flat-square&logo=python&logoColor=4F9D5B)
 ![Next.js](https://img.shields.io/badge/Next.js-2C3A2E?style=flat-square&logo=nextdotjs&logoColor=4F9D5B)
+![Expo](https://img.shields.io/badge/Expo-2C3A2E?style=flat-square&logo=expo&logoColor=4F9D5B)
 ![Node.js](https://img.shields.io/badge/Node.js-2C3A2E?style=flat-square&logo=node.js&logoColor=4F9D5B)
 ![R](https://img.shields.io/badge/R-2C3A2E?style=flat-square&logo=r&logoColor=4F9D5B)
 ![Power BI](https://img.shields.io/badge/Power_BI-2C3A2E?style=flat-square&logo=powerbi&logoColor=4F9D5B)
@@ -65,47 +66,44 @@
 
 ---
 
-**`◆ PROYECTOS`**
+**`◆ PROYECTOS MAS IMPORTANTES`**
 
 <table>
 <tr>
 <td width="33%" valign="top">
 
-**`[ PROYECTO 1 ]`**
+**`[ Spyka Planillas ]`**
 
-> Descripción breve del proyecto y qué problema resuelve.
+> Sistema de Nómina y RRHH para Costa Rica. Gestiona horarios, relojes biométricos, cálculo de salarios, aguinaldos y liquidaciones conforme a la normativa del Ministerio de Trabajo.
 
-![Tech](https://img.shields.io/badge/Tech-2C3A2E?style=flat-square)
-![Stack](https://img.shields.io/badge/Stack-2C3A2E?style=flat-square)
-![EN CURSO](https://img.shields.io/badge/EN_CURSO-4F9D5B?style=flat-square&labelColor=2C3A2E)
-
-[Ver repo →](https://github.com/Caldeseio)
-
-</td>
-<td width="33%" valign="top">
-
-**`[ PROYECTO 2 ]`**
-
-> Descripción breve del proyecto y qué problema resuelve.
-
-![Tech](https://img.shields.io/badge/Tech-2C3A2E?style=flat-square)
-![Stack](https://img.shields.io/badge/Stack-2C3A2E?style=flat-square)
+![PHP](https://img.shields.io/badge/PHP-2C3A2E?style=flat-square&logo=php&logoColor=4F9D5B)
+![JavaScript](https://img.shields.io/badge/JavaScript-2C3A2E?style=flat-square&logo=javascript&logoColor=4F9D5B)
+![HTML](https://img.shields.io/badge/HTML-2C3A2E?style=flat-square&logo=html5&logoColor=4F9D5B)
+![MariaDB](https://img.shields.io/badge/MariaDB-2C3A2E?style=flat-square&logo=mariadb&logoColor=4F9D5B)
 ![COMPLETADO](https://img.shields.io/badge/COMPLETADO-6E7268?style=flat-square&labelColor=2C3A2E)
 
-[Ver repo →](https://github.com/Caldeseio)
+</td>
+<td width="33%" valign="top">
+
+**`[ App Biometria ]`**
+
+> App móvil de marcas de entrada/salida integrada con Spyka Planillas para el control de asistencia y cálculo automático de horas trabajadas.
+
+![React Native](https://img.shields.io/badge/React_Native-2C3A2E?style=flat-square&logo=react&logoColor=4F9D5B)
+![Expo](https://img.shields.io/badge/Expo-2C3A2E?style=flat-square&logo=expo&logoColor=4F9D5B)
+![COMPLETADO](https://img.shields.io/badge/COMPLETADO-6E7268?style=flat-square&labelColor=2C3A2E)
 
 </td>
 <td width="33%" valign="top">
 
-**`[ PROYECTO 3 ]`**
+**`[ Glacix ERP y CRM ]`**
 
-> Descripción breve del proyecto y qué problema resuelve.
+> Suite empresarial con módulos de facturación, inventario, clientes y CRM. Centraliza toda la operación de una empresa en una sola plataforma.
 
-![Tech](https://img.shields.io/badge/Tech-2C3A2E?style=flat-square)
-![Stack](https://img.shields.io/badge/Stack-2C3A2E?style=flat-square)
+![Laravel](https://img.shields.io/badge/Laravel-2C3A2E?style=flat-square&logo=laravel&logoColor=4F9D5B)
+![React](https://img.shields.io/badge/React-2C3A2E?style=flat-square&logo=react&logoColor=4F9D5B)
+![MariaDB](https://img.shields.io/badge/MariaDB-2C3A2E?style=flat-square&logo=mariadb&logoColor=4F9D5B)
 ![EN CURSO](https://img.shields.io/badge/EN_CURSO-4F9D5B?style=flat-square&labelColor=2C3A2E)
-
-[Ver repo →](https://github.com/Caldeseio)
 
 </td>
 </tr>
