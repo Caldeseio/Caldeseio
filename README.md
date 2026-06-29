@@ -12,17 +12,6 @@
 
 <br>
 
-<!-->
-
-<div align="center">
-
-<img src="images/logo.svg" width="48" alt="">
-
-### Luis Calderón Jiménez
-
--->
-`Software Developer · Data Analyst`
-
 *Ingeniería precisa, hecha con criterio propio.*
 <br>
 
