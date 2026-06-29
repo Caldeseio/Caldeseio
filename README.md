@@ -1,3 +1,11 @@
+<!--
+  CONFIGURACIÓN — edita estos valores para personalizar el README
+  GH_USER   : Caldeseio            ← nombre de usuario GitHub (2 apariciones en ◆ ACTIVIDAD)
+  LI_USER   : luis-calderon-962a57258  ← ID de perfil LinkedIn
+  EMAIL     : l.calderon@uempresarial.com
+  PORTFOLIO : caldeseio.dev
+-->
+
 <div align="center">
   <img src="images/banner.png" alt="Caldeseio" width="100%">
 </div>
@@ -101,6 +109,8 @@
 </table>
 
 ---
+
+<img src="images/anim.svg" width="100%" alt="">
 
 <div align="center">
   <br>
