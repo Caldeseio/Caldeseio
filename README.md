@@ -12,11 +12,15 @@
 
 <br>
 
+<!-->
+
 <div align="center">
 
 <img src="images/logo.svg" width="48" alt="">
 
 ### Luis Calderón Jiménez
+
+-->
 `Software Developer · Data Analyst`
 
 *Ingeniería precisa, hecha con criterio propio.*
@@ -117,7 +121,7 @@
   <br>
   <img src="https://img.shields.io/badge/●_DISPONIBLE_PARA_PROYECTOS-4F9D5B?style=flat-square&labelColor=2C3A2E" alt="Disponible">
   <br><br>
-  <a href="https://caldeseio.dev"><img src="https://img.shields.io/badge/caldeseio.dev-2C3A2E?style=flat-square&logoColor=4F9D5B" alt="caldeseio.dev"></a>
+  <a href="https://caldeseio-cv.vercel.app"><img src="https://img.shields.io/badge/Portafolio-2C3A2E?style=flat-square&logoColor=4F9D5B" alt="Portafolio"></a>
   &nbsp;·&nbsp;
   <img src="https://img.shields.io/badge/@caldeseio-2C3A2E?style=flat-square&logo=github&logoColor=4F9D5B" alt="@caldeseio">
   <br><br>
